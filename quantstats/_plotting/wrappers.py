@@ -58,6 +58,12 @@ def to_plotly(fig):
         warnings.filterwarnings("ignore")
         print('test')
         fig = plotly.tools.mpl_to_plotly(fig)
+        for axis in ['xaxis']:
+            fig['layout'][axis]['tickfont'] =  dict(
+                                        family="Calibri",
+                                        size=12,
+                                        color="black"
+                                    )
         return plotly.plotly.iplot(fig, filename="quantstats-plot", overwrite=True)
 
 
