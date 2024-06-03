@@ -1605,7 +1605,7 @@ def _open_html(html):
         iDisplay(iHTML(jscode))
 
 
-#def _embed_figure(figfiles, figfmt):
+def _embed_figure(figfiles, figfmt):
     if isinstance(figfiles, list):
         embed_string = "\n"
         for figfile in figfiles:
