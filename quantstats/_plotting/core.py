@@ -38,8 +38,8 @@ from .. import (
     stats as _stats,
     utils as _utils,
 )
-
-
+import warnings
+warnings.filterwarnings("ignore")
 _sns.set(
     font_scale=1.1,
     rc={
