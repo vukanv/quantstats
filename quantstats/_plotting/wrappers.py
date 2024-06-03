@@ -56,6 +56,7 @@ def to_plotly(fig):
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         warnings.filterwarnings("ignore")
+        print('test')
         fig = plotly.tools.mpl_to_plotly(fig)
         return plotly.plotly.iplot(fig, filename="quantstats-plot", overwrite=True)
 
